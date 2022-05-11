@@ -1,0 +1,118 @@
+<div class="mainDiv">
+
+   <div fxLayout="row" fxLayoutAlign="center center">
+      <div fxLayout="column" fxLayoutAlign="space-between center">
+         <mat-card class="card1" style="margin-top:-20px;">
+            <img src="..//../../assets/Womencart.png" class="image">
+            <h1 class="h1">Online Book Shopping</h1>
+         </mat-card>
+      </div>
+
+      <div style="display: flex; flex-flow:row">
+         <mat-card class="card2">
+            <div fxLayout="row" fxLayoutAlign="space-evenly start" style="margin-top:-89px;">
+               <!-- //login form -->
+               <mat-tab-group>
+                  <mat-tab label="Login">
+                     <form [formGroup]="loginForm" (ngSubmit)="onLogin()" fxLayout="column"
+                        fxLayoutAlign="space-around">
+                        <div>
+                           <label>EmailId</label>
+                           <div>
+                              <mat-form-field appearance="outline">
+
+                                 <input style="border: black;height: 25px; ;width: 300px" matInput type="text"
+                                    formControlName="email">
+                                    <mat-error>Email Required!</mat-error>
+                              </mat-form-field>
+                           </div>
+                        </div>
+                        <div  style="margin-top: 20px;">
+                           <label>Password</label>
+                           <div >
+                              <mat-form-field appearance="outline">
+                                 <input  style="border: black;height: 25px; ;width: 300px" matInput [type]="hide?'password':'text'" matInput formControlName="password">
+                                 <mat-error>Password Required!</mat-error>
+                              </mat-form-field>
+                           </div>
+
+                        </div>
+                        <div fxLayoutAlign="end end" style="margin-top: 20px;">
+                           <button (click)="forgetpassword()"class="forgetpass">Forgot Password?</button>
+                        </div>
+
+                        <button class="loginbutton" style="color: white;margin-top: 10px; ;">Login</button>
+                     </form>
+                     <span  (click)="showPassword()">
+                        <mat-checkbox>Show Password</mat-checkbox>
+                     </span>
+
+                     <div fxLayoutAlign="center center" style="margin-top: 20px;">
+                        <h2>OR</h2>
+                     </div>
+                     <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="20px" fxLayout.xs="column">
+                        <button class="bottombuttons" style="color: white;">Facebbok</button>
+                        <button style=" background-color: #E4E4E4;" class="bottombuttons">Google</button>
+                     </div>
+                  </mat-tab>
+
+                  <!-- //signupForm -->
+                  <mat-tab label="SignUp">
+                     <form [formGroup]="signupForm" fxLayout="column" fxLayoutAlign="space-evenly start">
+
+
+
+                        <div>
+                           <span>Fullname</span>
+                           <div>
+                              <mat-form-field width="600px" appearance="outline">
+                                 <input matInput formControlName="fullName">
+                                 <mat-error>Name Required!</mat-error>
+                                
+                              </mat-form-field>
+                           </div>
+                        </div>
+
+                        <div  style="margin-top: 20px;">
+                           <span>EmailId</span>
+                           <div>
+                              <mat-form-field width="600px" appearance="outline">
+                                 <input matInput formControlName="email">
+                                 <mat-error>Email Required!</mat-error>
+                                 
+                              </mat-form-field>
+                           </div>
+                        </div>
+
+                        <div  style="margin-top: 20px;">
+                           <span>Password</span>
+                           <div>
+                              <mat-form-field appearance="outline">
+
+                                 <input matInput [type]="hide?'password':'text'" matInput formControlName="password">
+                                 <mat-error>Password Required!</mat-error>
+                                 
+                              </mat-form-field>
+                           </div>
+                        </div>
+                        <div  style="margin-top: 20px;">
+                           <span>Mobile Number</span>
+                           <div>
+                              <mat-form-field appearance="outline">
+
+                                 <input matInput matInput formControlName="mobileNum">
+                                 <mat-error>Mobile Number Required!</mat-error>
+                                
+                              </mat-form-field>
+                           </div>
+                        </div>
+                     </form>
+                     <button (click)="onSignup()" class="loginbutton" style="color: white;">Signup</button>
+                  </mat-tab>
+               </mat-tab-group>
+            </div>
+         </mat-card>
+      </div>
+   </div>
+
+</div>
