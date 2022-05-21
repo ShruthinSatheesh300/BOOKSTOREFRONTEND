@@ -42,5 +42,15 @@ export class UserService {
 
 	}
 
+	customerService(reqData: any) {
+		let headers = {
+		  headers: new HttpHeaders({
+			'Content-type': 'application/json',
+			'Authorization':'Bearer '+ this.token,
+		  })
+		}
+		return this.httpService.postService('/info/post', reqData, true, headers)
+	  }
+
 
 }

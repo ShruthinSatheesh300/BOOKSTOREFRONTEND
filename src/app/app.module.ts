@@ -11,6 +11,12 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { HttpClientModule } from '@angular/common/http';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatSelectModule} from '@angular/material/select';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatRadioModule} from '@angular/material/radio';
+
 
 
 
@@ -19,7 +25,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignupLoginComponent } from './components/signup-login/signup-login.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
-import { DashoardComponent } from './components/dashoard/dashoard.component';
+import { GetAllBooksComponent } from './components/get-all-books/get-all-books.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { GetcartComponent } from './components/getcart/getcart.component';
+import { OrderplacedComponent } from './components/orderplaced/orderplaced.component';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
 
 
 @NgModule({
@@ -27,7 +38,12 @@ import { DashoardComponent } from './components/dashoard/dashoard.component';
     AppComponent,
     SignupLoginComponent,
     ForgotPasswordComponent,
-    DashoardComponent
+    GetAllBooksComponent,
+    DashboardComponent,
+    FooterComponent,
+    GetcartComponent,
+    OrderplacedComponent,
+    WishlistComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +59,12 @@ import { DashoardComponent } from './components/dashoard/dashoard.component';
     MatToolbarModule,
     BrowserAnimationsModule,
     MatCheckboxModule,
-    HttpClientModule
+    HttpClientModule,
+    MatMenuModule,
+    MatDividerModule,
+    MatSelectModule,
+    MatExpansionModule,
+    MatRadioModule
     
   ],
   providers: [],
