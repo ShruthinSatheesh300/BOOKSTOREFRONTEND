@@ -31,6 +31,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { GetcartComponent } from './components/getcart/getcart.component';
 import { OrderplacedComponent } from './components/orderplaced/orderplaced.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { SearchPipe } from './components/search.pipe';
+import {NgxPaginationModule} from 'ngx-pagination'; 
 
 
 @NgModule({
@@ -43,7 +45,9 @@ import { WishlistComponent } from './components/wishlist/wishlist.component';
     FooterComponent,
     GetcartComponent,
     OrderplacedComponent,
-    WishlistComponent
+    WishlistComponent,
+    SearchPipe,
+   
   ],
   imports: [
     BrowserModule,
@@ -64,7 +68,8 @@ import { WishlistComponent } from './components/wishlist/wishlist.component';
     MatDividerModule,
     MatSelectModule,
     MatExpansionModule,
-    MatRadioModule
+    MatRadioModule,
+    NgxPaginationModule
     
   ],
   providers: [],
