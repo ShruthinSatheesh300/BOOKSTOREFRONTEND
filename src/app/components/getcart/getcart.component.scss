@@ -1,0 +1,290 @@
+.section {
+    margin-bottom: 2%;
+    width: 750px;
+    height: fit-content;
+    margin-top:20px;
+
+}
+
+.cartbook {
+
+    width: 160%;
+    margin-left: -46%;
+
+
+}
+
+.bookImage {
+   height: 95px;
+    width: 80px;
+}
+
+.entirebook {
+   margin-top: -2%;
+    margin-left: 10%;
+
+
+}
+
+.bookname {
+    margin-left: 15px;
+    font-family: Roboto;
+    font-weight: 500;
+    margin-top: 8px;
+    font-size: 18px;
+    margin-bottom: 5px;
+
+}
+
+.author {
+    font-size: 12px;
+    color: grey;
+    margin-left: 15px;
+    margin-bottom: 5px;
+
+}
+
+.price {
+    font-size: 15px;
+    margin-left: 15px;
+    margin-bottom: 10%;
+
+}
+
+.discountprice {
+    font-weight: 620;
+
+}
+
+.originalprice {
+    color:black;
+
+}
+
+.quantity {
+
+    position: relative;
+    left: 10px;
+
+}
+
+.negativebutton {
+    background-color: white;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.negative {
+    color: black;
+    position: relative;
+    top: 5px;
+
+}
+
+.bookquantity {
+    font-size: 15px;
+    border: 1px solid whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    width: 40px;
+    height: 23px;
+
+}
+
+.positivebutton {
+    background-color: white;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+
+}
+
+.positive {
+    color: black;
+    position: relative;
+    top: 5px;
+
+}
+
+// .remove {
+//     margin-left: 15px;
+//     font-size: 15px;
+//     font-family: Lato;
+//     cursor: pointer;
+//     border: none;
+//     background-color: #FFFFFF;
+
+// }
+
+.rightdiv {
+    margin-right: 5%;
+    margin-top: 40px;
+}
+
+.location {
+    border: 1px solid lightgrey;
+    height: 30px;
+    width: 200px;
+    margin-top: -225px;
+    position: relative;
+    // top: -60px;
+    left: 130px;
+    // color: darkred;
+
+}
+.placeIcon{
+    color: darkred;
+    height: 20px;
+    width: 30px;
+}
+.currentlocation {
+    margin-top: 3px;
+}
+.button{
+    width: 150px;
+    left: 127px;
+}
+
+
+.mat-expansion-panel {
+    width: 780px;
+    margin-left: 200px;
+    position: relative;
+    top: 120px;
+}
+
+// address details
+.customerdetails{
+    margin-bottom: 20px;
+    width: 750px;
+    height: 500px;
+
+}
+
+.details {
+
+    margin-bottom: 20px;
+    margin-left: 30px;
+
+}
+
+.heading {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: -28px;
+
+}
+
+.names {
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+.address1 {
+    position: relative;
+    left: 20px;
+}
+
+
+.type {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.home {
+    margin-left: 30px;
+
+}
+
+.work {
+    margin-left: 100px;
+
+}
+
+.other {
+    margin-left: 100px;
+
+}
+
+.address {
+    border: 1px solid darkred;
+    color: darkred;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 180px;
+    position: relative;
+    left: 100px;
+}
+
+.continuebutton {
+    width: 150px;
+    height: 30px;
+    margin-left: 15px;
+    position: relative;
+    top: 170px;
+    left: 95px;
+    background-origin: 1px solid green;
+    background: #3371B5 0% 0% no-repeat padding-box;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    font: normal normal medium 14px/17px Lato;
+     font-family: Lato;
+    border-radius: 3px;
+    border: none;
+    opacity: 6;
+    cursor: pointer;
+    
+    
+}
+
+.addressandcontinue {
+
+    position: relative;
+    bottom: 420px;
+    left: 310px;
+}
+
+
+.checkoutbutton {
+    background-origin: 1px solid green;
+    width: 150px;
+    height: 30px;
+    position: relative;
+    left: 130px;
+    top: 200px;
+    margin-left: 50px;
+    margin-top:-50px;
+    background: #3371B5 0% 0% no-repeat padding-box;
+    font-weight: bold;
+    font-family: Lato;
+    border-radius: 3px;
+    border: none;
+    opacity: 6;
+     font: normal normal medium 14px/17px Lato;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+.section1{
+    margin-bottom:50px;
+    width: 750px;
+    height:auto;
+    margin-top:20px;
+
+}
+.rightdiv1 {
+    margin-right: 5%;
+    margin-bottom: auto;
+    margin-top: -80px;
+}
