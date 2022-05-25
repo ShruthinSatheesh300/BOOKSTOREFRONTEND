@@ -1,28 +1,28 @@
-<mat-toolbar class="toolbar"  [ngStyle.xs]="{'font-size.px': 10}">
+<mat-toolbar class="toolbar"  [ngStyle.xs]="{'font-size.px': 20}">
 
-    <img src="../../../assets/education.svg" style="padding: 0px 6px 0px 201px;" fxLayout.xs="row">
+    <img src="../../../assets/education.svg" style="padding: 0px 6px 0px 201px;margin-left: -70px;"  [ngStyle.xs]="{'width.px': 20}">
     <span>Bookstore</span>
 
     <div class="search_bar" fxHide.lt-md>
-        <img src="../../../assets/search_black_24dp (1).svg" fxLayout.xs="row">
+        <img src="../../../assets/search_black_24dp (1).svg" [ngStyle.xs]="{'width.px': 10}" >
         <input type="text" placeholder="Search..." class="search_input" #search
         (keyup)="searchBook(search.value)" [ngStyle.xs]="{'width.px': 10}">
     </div>
 
 
-    <div fxLayout="column" fxLayoutAlign="center center"  [ngStyle.xs]="{'margin-left.px': -10}">
+    <div fxLayout="column" fxLayoutAlign="center center" [ngStyle.xs]="{'margin.px':-50}" >
 
         <button class="profile" [matMenuTriggerFor]="belowMenu">
-            <img src="../../../assets/person_outline_white_24dp.svg" [ngStyle.xs]="{'width.px': 20}">
-           
+            <img class="profileimg" src="../../../assets/person_outline_white_24dp.svg" [ngStyle.xs]="{'margin.px':-50}">
+            <p style="margin-top:1px;color: white;">Profile</p>
         </button>
        
     </div>
 
-    <div class="cart" (click)="cart()" fxLayout="column" fxLayoutAlign="center center">
+    <div class="cart" (click)="cart()" fxLayout="column" fxLayoutAlign="center center" [ngStyle.xs]="{'margin.px':-50}">
 
         <button style="background-color: #A03037; border: none; cursor: pointer;">
-            <img src="../../../assets/shopping_cart_white_24dp.svg" [ngStyle.xs]="{'width.px': 20}">
+            <img src="../../../assets/shopping_cart_white_24dp.svg" [ngStyle.xs]="{'margin-left.px': -10}">
         </button>
         <p style="margin-top:-10px;">Cart</p>
 
