@@ -21,9 +21,9 @@ export class GetAllBooksComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAllBook();
-    this.dataservice.receivedData.subscribe((response: any) => { 
-      console.log(response)
-      this.searchword = response;
+    this.dataservice.receivedData.subscribe((res: any) => { 
+      console.log(res)
+      this.searchword = res;
       console.log(this.searchword);
 
 
@@ -38,8 +38,7 @@ export class GetAllBooksComponent implements OnInit {
       this.BookList = res.data;
       this.totalLength=res.data.length
       this.bookCount = res.data.length;
-      console.log("BookList======>",this.BookList);
-      console.log(this.bookCount);
+      
     
       
 
@@ -60,6 +59,20 @@ export class GetAllBooksComponent implements OnInit {
     this.bookService.addToWishlistService(book._id).subscribe((res: any) => {
       console.log(res);
     })
+
+  }
+
+  lowToHigh(){
+    this.BookList = this.BookList.sort((low:any,high:any)=>low.price-high.price);
+
+  }
+  highToLow(){
+    this.BookList = this.BookList.sort((low:any,high:any)=>high.price-low.price);
+
+
+  }
+  latest(){
+    this.BookList.reverse();
 
   }
 
